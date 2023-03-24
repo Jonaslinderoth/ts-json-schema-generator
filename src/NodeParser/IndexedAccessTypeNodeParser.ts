@@ -14,7 +14,7 @@ import { derefType } from "../Utils/derefType";
 import { getTypeByKey } from "../Utils/typeKeys";
 
 export class IndexedAccessTypeNodeParser implements SubNodeParser {
-    public constructor(protected typeChecker: ts.TypeChecker, protected childNodeParser: NodeParser) {}
+    public constructor(protected typeChecker: ts.TypeChecker, protected childNodeParser: NodeParser) { }
 
     public supportsNode(node: ts.TypeNode): boolean {
         return node.kind === ts.SyntaxKind.IndexedAccessType;
@@ -69,6 +69,9 @@ export class IndexedAccessTypeNodeParser implements SubNodeParser {
                     return new UnionType(objectType.getTypes());
                 } else if (type instanceof LiteralType) {
                     if (objectType instanceof ReferenceType) {
+                        return objectType;
+                    }
+                    if (objectType instanceof TupleType && type.getValue() == "length") {
                         return objectType;
                     }
                     throw new LogicError(`Invalid index "${type.getValue()}" in type "${objectType.getId()}"`);
