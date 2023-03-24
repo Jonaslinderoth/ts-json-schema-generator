@@ -1,0 +1,1197 @@
+{
+  "$ref": "#/definitions/t3",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "JsonLogicAll<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "all": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "all"
+      ],
+      "type": "object"
+    },
+    "JsonLogicAnd<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "and": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "and"
+      ],
+      "type": "object"
+    },
+    "JsonLogicCat<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "cat": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "cat"
+      ],
+      "type": "object"
+    },
+    "JsonLogicDifference<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "-": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "-"
+      ],
+      "type": "object"
+    },
+    "JsonLogicDoubleNegation": {
+      "additionalProperties": false,
+      "properties": {
+        "!!": {}
+      },
+      "required": [
+        "!!"
+      ],
+      "type": "object"
+    },
+    "JsonLogicEqual": {
+      "additionalProperties": false,
+      "properties": {
+        "==": {
+          "items": {},
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        }
+      },
+      "required": [
+        "=="
+      ],
+      "type": "object"
+    },
+    "JsonLogicFilter<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "filter": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "filter"
+      ],
+      "type": "object"
+    },
+    "JsonLogicGreaterThan<never>": {
+      "additionalProperties": false,
+      "properties": {
+        ">": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        ">"
+      ],
+      "type": "object"
+    },
+    "JsonLogicGreaterThanOrEqual<never>": {
+      "additionalProperties": false,
+      "properties": {
+        ">=": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        ">="
+      ],
+      "type": "object"
+    },
+    "JsonLogicIf": {
+      "additionalProperties": false,
+      "properties": {
+        "if": {
+          "description": "Used for the \"if\" operation, which takes an array of odd length and a minimum of three (3) elements.",
+          "items": {},
+          "maxItems": 1,
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "if"
+      ],
+      "type": "object"
+    },
+    "JsonLogicInArray<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "in": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "in"
+      ],
+      "type": "object"
+    },
+    "JsonLogicInString<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "in": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "in"
+      ],
+      "type": "object"
+    },
+    "JsonLogicLessThan<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "<": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "<"
+      ],
+      "type": "object"
+    },
+    "JsonLogicLessThanOrEqual<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "<=": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "<="
+      ],
+      "type": "object"
+    },
+    "JsonLogicLog<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "log": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "log"
+      ],
+      "type": "object"
+    },
+    "JsonLogicMap<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "map": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "map"
+      ],
+      "type": "object"
+    },
+    "JsonLogicMax<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "max": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "max"
+      ],
+      "type": "object"
+    },
+    "JsonLogicMerge<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "merge": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "merge"
+      ],
+      "type": "object"
+    },
+    "JsonLogicMin<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "min"
+      ],
+      "type": "object"
+    },
+    "JsonLogicMissing<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "missing": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "missing"
+      ],
+      "type": "object"
+    },
+    "JsonLogicMissingSome<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "missing_some": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "missing_some"
+      ],
+      "type": "object"
+    },
+    "JsonLogicNegation": {
+      "additionalProperties": false,
+      "properties": {
+        "!": {}
+      },
+      "required": [
+        "!"
+      ],
+      "type": "object"
+    },
+    "JsonLogicNone<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "none": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "none"
+      ],
+      "type": "object"
+    },
+    "JsonLogicNotEqual": {
+      "additionalProperties": false,
+      "properties": {
+        "!=": {
+          "items": {},
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        }
+      },
+      "required": [
+        "!="
+      ],
+      "type": "object"
+    },
+    "JsonLogicOr<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "or": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "or"
+      ],
+      "type": "object"
+    },
+    "JsonLogicProduct<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "*": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "*"
+      ],
+      "type": "object"
+    },
+    "JsonLogicQuotient<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "/": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "/"
+      ],
+      "type": "object"
+    },
+    "JsonLogicReduce<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "reduce": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "reduce"
+      ],
+      "type": "object"
+    },
+    "JsonLogicRemainder<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "%": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "%"
+      ],
+      "type": "object"
+    },
+    "JsonLogicRule": {
+      "additionalProperties": false,
+      "properties": {
+        "rule": {
+          "$ref": "#/definitions/RulesLogic"
+        }
+      },
+      "required": [
+        "rule"
+      ],
+      "type": "object"
+    },
+    "JsonLogicSome<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "some": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "some"
+      ],
+      "type": "object"
+    },
+    "JsonLogicStrictEqual": {
+      "additionalProperties": false,
+      "properties": {
+        "===": {
+          "items": {},
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        }
+      },
+      "required": [
+        "==="
+      ],
+      "type": "object"
+    },
+    "JsonLogicStrictNotEqual": {
+      "additionalProperties": false,
+      "properties": {
+        "!==": {
+          "items": {},
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        }
+      },
+      "required": [
+        "!=="
+      ],
+      "type": "object"
+    },
+    "JsonLogicSubstr<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "substr": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "substr"
+      ],
+      "type": "object"
+    },
+    "JsonLogicSum<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "+": {
+          "$ref": "#/definitions/interface-526809944-2000-4063-526809944-0-10892%3Cnever%3E"
+        }
+      },
+      "required": [
+        "+"
+      ],
+      "type": "object"
+    },
+    "JsonLogicVar<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "var": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 1,
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "items": [
+                {
+                  "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+                },
+                {}
+              ],
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          ]
+        }
+      },
+      "required": [
+        "var"
+      ],
+      "type": "object"
+    },
+    "RulesLogic": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicVar%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMissing%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMissingSome%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicIf"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicEqual"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicStrictEqual"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicNotEqual"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicStrictNotEqual"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicNegation"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicDoubleNegation"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicOr%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicAnd%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicGreaterThan%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicGreaterThanOrEqual%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicLessThan%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicLessThanOrEqual%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMax%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMin%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicSum%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicDifference%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicProduct%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicQuotient%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicRemainder%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMap%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicFilter%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicReduce%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicAll%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicNone%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicSome%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMerge%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicInArray%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicInString%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicCat%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicSubstr%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicLog%3Cnever%3E"
+        }
+      ]
+    },
+    "RulesLogic<never>": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicVar%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMissing%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMissingSome%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicIf"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicEqual"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicStrictEqual"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicNotEqual"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicStrictNotEqual"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicNegation"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicDoubleNegation"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicOr%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicAnd%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicGreaterThan%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicGreaterThanOrEqual%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicLessThan%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicLessThanOrEqual%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMax%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMin%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicSum%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicDifference%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicProduct%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicQuotient%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicRemainder%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMap%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicFilter%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicReduce%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicAll%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicNone%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicSome%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicMerge%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicInArray%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicInString%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicCat%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicSubstr%3Cnever%3E"
+        },
+        {
+          "$ref": "#/definitions/JsonLogicLog%3Cnever%3E"
+        }
+      ]
+    },
+    "interface-526809944-2000-4063-526809944-0-10892<never>": {
+      "additionalProperties": false,
+      "properties": {
+        "!": {},
+        "!!": {},
+        "!=": {
+          "items": {},
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "!==": {
+          "items": {},
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "%": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "*": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "type": "array"
+            },
+            {
+              "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+            }
+          ]
+        },
+        "+": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "type": "array"
+            },
+            {
+              "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+            }
+          ]
+        },
+        "-": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "type": "array"
+            },
+            {
+              "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+            }
+          ]
+        },
+        "/": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "type": "array"
+            },
+            {
+              "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+            }
+          ]
+        },
+        "<": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            }
+          ]
+        },
+        "<=": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            }
+          ]
+        },
+        "==": {
+          "items": {},
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "===": {
+          "items": {},
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        ">": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        ">=": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "all": {
+          "anyOf": [
+            {
+              "items": [
+                {
+                  "items": {
+                    "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+                  },
+                  "type": "array"
+                },
+                {
+                  "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+                }
+              ],
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          ]
+        },
+        "and": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "type": "array"
+        },
+        "cat": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "type": "array"
+        },
+        "filter": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "if": {
+          "description": "Used for the \"if\" operation, which takes an array of odd length and a minimum of three (3) elements.",
+          "items": {},
+          "maxItems": 1,
+          "minItems": 1,
+          "type": "array"
+        },
+        "inArray": {
+          "items": [
+            {
+              "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "type": "array"
+            }
+          ],
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "inString": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "log": {
+          "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+        },
+        "map": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "max": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "type": "array"
+        },
+        "merge": {
+          "items": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+                },
+                "type": "array"
+              },
+              {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              }
+            ]
+          },
+          "type": "array"
+        },
+        "min": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "type": "array"
+        },
+        "missing": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+            },
+            {
+              "items": {},
+              "type": "array"
+            }
+          ]
+        },
+        "missing_some": {
+          "items": [
+            {
+              "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+            },
+            {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+                },
+                {
+                  "items": {},
+                  "type": "array"
+                }
+              ]
+            }
+          ],
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "none": {
+          "anyOf": [
+            {
+              "items": [
+                {
+                  "items": {
+                    "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+                  },
+                  "type": "array"
+                },
+                {
+                  "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+                }
+              ],
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          ]
+        },
+        "or": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "type": "array"
+        },
+        "reduce": {
+          "items": {
+            "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+          },
+          "maxItems": 3,
+          "minItems": 3,
+          "type": "array"
+        },
+        "some": {
+          "anyOf": [
+            {
+              "items": [
+                {
+                  "items": {
+                    "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+                  },
+                  "type": "array"
+                },
+                {
+                  "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+                }
+              ],
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          ]
+        },
+        "substr": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            }
+          ]
+        },
+        "var": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+              },
+              "maxItems": 1,
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "items": [
+                {
+                  "$ref": "#/definitions/RulesLogic%3Cnever%3E"
+                },
+                {}
+              ],
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          ]
+        }
+      },
+      "required": [
+        "var",
+        "missing",
+        "missing_some",
+        "if",
+        "==",
+        "===",
+        "!=",
+        "!==",
+        "!",
+        "!!",
+        "or",
+        "and",
+        ">",
+        ">=",
+        "<",
+        "<=",
+        "max",
+        "min",
+        "+",
+        "-",
+        "*",
+        "/",
+        "%",
+        "map",
+        "filter",
+        "reduce",
+        "all",
+        "none",
+        "some",
+        "merge",
+        "inArray",
+        "inString",
+        "cat",
+        "substr",
+        "log"
+      ],
+      "type": "object"
+    },
+    "t1": {
+      "pattern": "^#(([0-9a-fA-F]{2}){3,4}|([0-9a-fA-F]){3,4})$",
+      "type": "string"
+    },
+    "t2": {
+      "minimum": 0,
+      "type": "number"
+    },
+    "t3": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/t1"
+        },
+        {
+          "$ref": "#/definitions/t2"
+        },
+        {
+          "$ref": "#/definitions/t4"
+        }
+      ]
+    },
+    "t4": {
+      "additionalProperties": false,
+      "properties": {
+        "Hello": {
+          "type": "string"
+        },
+        "boo": {
+          "$ref": "#/definitions/JsonLogicRule"
+        }
+      },
+      "required": [
+        "Hello",
+        "boo"
+      ],
+      "type": "object"
+    }
+  }
+}

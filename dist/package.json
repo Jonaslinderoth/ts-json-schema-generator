@@ -1,0 +1,98 @@
+{
+    "name": "ts-json-schema-generator",
+    "version": "1.0.2",
+    "description": "Generate JSON schema from your Typescript sources",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "bin": {
+        "ts-json-schema-generator": "./bin/ts-json-schema-generator"
+    },
+    "files": [
+        "dist",
+        "src",
+        "factory",
+        "index.*",
+        "ts-json-schema-generator.*",
+        "tsconfig.json"
+    ],
+    "author": {
+        "name": "Alexander Evtushenko",
+        "email": "aevtushenko@xiag.ch"
+    },
+    "contributors": [
+        {
+            "name": "Dominik Moritz",
+            "email": "domoritz@gmail.com"
+        },
+        {
+            "name": "MooYeol Prescott Lee",
+            "email": "mooyoul@gmail.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vega/ts-json-schema-generator.git"
+    },
+    "license": "MIT",
+    "keywords": [
+        "ts",
+        "typescript",
+        "json",
+        "schema",
+        "jsonschema"
+    ],
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "dependencies": {
+        "@types/json-schema": "^7.0.11",
+        "commander": "^10.0.0",
+        "glob": "^8.0.3",
+        "json5": "^2.2.3",
+        "normalize-path": "^3.0.0",
+        "safe-stable-stringify": "^2.4.2",
+        "typescript": "~5.0.2"
+    },
+    "devDependencies": {
+        "@auto-it/conventional-commits": "^10.43.0",
+        "@auto-it/first-time-contributor": "^10.43.0",
+        "@babel/core": "^7.21.3",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/preset-typescript": "^7.21.0",
+        "@types/glob": "^8.1.0",
+        "@types/jest": "^29.5.0",
+        "@types/node": "^18.15.3",
+        "@types/normalize-path": "^3.0.0",
+        "@typescript-eslint/eslint-plugin": "^5.55.0",
+        "@typescript-eslint/parser": "^5.55.0",
+        "ajv": "^8.12.0",
+        "ajv-formats": "^2.1.1",
+        "auto": "^10.43.0",
+        "chai": "^4.3.7",
+        "cross-env": "^7.0.3",
+        "eslint": "^8.36.0",
+        "eslint-config-prettier": "^8.7.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "jest": "^29.5.0",
+        "jest-junit": "^15.0.0",
+        "prettier": "^2.8.4",
+        "ts-node": "^10.9.1",
+        "vega": "^5.22.1",
+        "vega-lite": "^5.6.0"
+    },
+    "scripts": {
+        "install": "tsc",
+        "prepublishOnly": "yarn build",
+        "build": "tsc",
+        "watch": "tsc -w",
+        "lint": "eslint \"{src,test,factory}/**/*.ts\"",
+        "format": "yarn lint --fix",
+        "test": "jest test/ --verbose",
+        "test:fast": "cross-env FAST_TEST=1 jest test/ --verbose",
+        "test:coverage": "yarn jest test/ --collectCoverage=true",
+        "test:update": "cross-env UPDATE_SCHEMA=true yarn test:fast",
+        "debug": "node -r ts-node/register --inspect-brk ts-json-schema-generator.ts",
+        "run": "ts-node-transpile-only ts-json-schema-generator.ts",
+        "release": "yarn build && auto shipit"
+    }
+}
