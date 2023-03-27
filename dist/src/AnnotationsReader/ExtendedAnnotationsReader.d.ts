@@ -9,4 +9,5 @@ export declare class ExtendedAnnotationsReader extends BasicAnnotationsReader {
     private getDescriptionAnnotation;
     private getTypeAnnotation;
     private getExampleAnnotation;
+    private getMessageAnnotation;
 }

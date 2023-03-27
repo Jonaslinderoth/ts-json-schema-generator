@@ -1,6 +1,6 @@
 {
     "name": "ts-json-schema-generator",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "Generate JSON schema from your Typescript sources",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -81,7 +81,6 @@
         "vega-lite": "^5.6.0"
     },
     "scripts": {
-        "install": "tsc",
         "prepublishOnly": "yarn build",
         "build": "tsc",
         "watch": "tsc -w",

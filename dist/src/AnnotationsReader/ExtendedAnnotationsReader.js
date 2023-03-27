@@ -17,6 +17,7 @@ class ExtendedAnnotationsReader extends BasicAnnotationsReader_1.BasicAnnotation
             ...this.getDescriptionAnnotation(node),
             ...this.getTypeAnnotation(node),
             ...this.getExampleAnnotation(node),
+            ...this.getMessageAnnotation(node),
             ...super.getAnnotations(node),
         };
         return Object.keys(annotations).length ? annotations : undefined;
@@ -89,6 +90,38 @@ class ExtendedAnnotationsReader extends BasicAnnotationsReader_1.BasicAnnotation
             return undefined;
         }
         return { examples };
+    }
+    getMessageAnnotation(node) {
+        var _a;
+        const symbol = (0, symbolAtNode_1.symbolAtNode)(node);
+        if (!symbol) {
+            return undefined;
+        }
+        const jsDocTags = symbol.getJsDocTags();
+        if (!jsDocTags || !jsDocTags.length) {
+            return undefined;
+        }
+        const messages = {};
+        for (const example of jsDocTags.filter((tag) => tag.name == "message")) {
+            let text = ((_a = example.text) !== null && _a !== void 0 ? _a : []).map((part) => part.text).join("");
+            try {
+                const found = text.match(/\{[a-z]+\}/g);
+                if (found) {
+                    text = text.replace(found[0], "");
+                }
+                text = text.trim();
+                let key = String(found);
+                key = key.replace(/\{/, "");
+                key = key.replace(/\}/, "");
+                messages[key] = text;
+            }
+            catch (e) {
+            }
+        }
+        if (Object.keys(messages).length === 0) {
+            return undefined;
+        }
+        return { message: messages };
     }
 }
 exports.ExtendedAnnotationsReader = ExtendedAnnotationsReader;
