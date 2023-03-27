@@ -14,6 +14,7 @@ export class ExtendedAnnotationsReader extends BasicAnnotationsReader {
             ...this.getDescriptionAnnotation(node),
             ...this.getTypeAnnotation(node),
             ...this.getExampleAnnotation(node),
+            ...this.getMessageAnnotation(node),
             ...super.getAnnotations(node),
         };
         return Object.keys(annotations).length ? annotations : undefined;
@@ -104,5 +105,48 @@ export class ExtendedAnnotationsReader extends BasicAnnotationsReader {
         }
 
         return { examples };
+    }
+
+    /**
+     * Gather custom messages to print better error messages
+     */
+    private getMessageAnnotation(node: ts.Node): Annotations | undefined {
+        const symbol = symbolAtNode(node);
+        if (!symbol) {
+            return undefined;
+        }
+
+        const jsDocTags: ts.JSDocTagInfo[] = symbol.getJsDocTags();
+
+        if (!jsDocTags || !jsDocTags.length) {
+            return undefined;
+        }
+
+        const messages: any = {};
+        for (const example of jsDocTags.filter((tag) => tag.name == "message")) {
+            let text = (example.text ?? []).map((part) => part.text).join("");
+            try {
+                const found = text.match(/\{[a-z]+\}/g);
+                if (found) {
+                    text = text.replace(found[0], "");
+                }
+                text = text.trim();
+                let key = String(found);
+                key = key.replace(/\{/, "");
+                key = key.replace(/\}/, "");
+
+                messages[key] = json5.parse(text);
+            } catch (e) {
+                // ignore examples which don't parse to valid JSON
+                // This could be improved to support a broader range of usages,
+                // such as if the example has a title (as explained in the tsdoc spec).
+            }
+        }
+
+        if (Object.keys(messages).length === 0) {
+            return undefined;
+        }
+
+        return { message: messages };
     }
 }
