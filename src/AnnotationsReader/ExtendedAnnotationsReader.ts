@@ -135,7 +135,7 @@ export class ExtendedAnnotationsReader extends BasicAnnotationsReader {
                 key = key.replace(/\{/, "");
                 key = key.replace(/\}/, "");
 
-                messages[key] = json5.parse(text);
+                messages[key] = text;
             } catch (e) {
                 // ignore examples which don't parse to valid JSON
                 // This could be improved to support a broader range of usages,
